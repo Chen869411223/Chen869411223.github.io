@@ -1,0 +1,179 @@
+body{
+    background-color: #f3f3f3;
+}
+.xian::after{
+    content: "";
+    display: block;
+    width: 68%;
+    height: 0.1rem;
+    background-color: #eee;
+    position: absolute;
+    top: 20%;
+
+}
+.header{
+    background: url(../img/kefu.png) center;
+    background-size: 100% auto;
+    height:10rem;
+    padding: 2rem 0rem 2rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    .header-img{
+        width: 4rem;
+        height: 4rem;
+        background-color: red;
+        background: url(../img/kftx.png) center;
+        background-position:  100% auto;
+        background-size: 100%;
+    }
+    .home-welcome-greeting{
+        width: 80%;
+        height: 4rem;
+        background-color: rgba(51,51,51,.15);
+        color: #fff;
+        font-size: 1.4rem;
+        box-sizing: border-box;
+        padding: 0.5rem 1rem;;
+        border-radius: 0.2rem;
+        margin-left: 0.5rem;
+        position: relative;
+        em{
+            width:0;
+            height:0;
+            border-width: 0.3rem 0.3rem 0;
+            border-style:solid;
+            border: 0.5rem solid rgba(51,51,51,.15);
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            display: inline-block;
+            position: absolute;
+            top: 15%;
+            left: -5%;
+        }
+    }
+}
+.kf-list{
+    width: 90%;
+    height: 33rem;
+    background-color: #fff;
+    position: absolute;
+    top: 7rem;
+    left: 5.5%;
+    // display: flex;
+    margin-bottom: 10rem;
+    .list-title{
+        box-sizing: border-box;
+        padding: 1rem 1rem 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+    }
+    .list-item{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        height: 8rem;
+        .list-item-left{
+            display: inline-block;
+            text-align: center;
+            width: 30%;
+            height: 8rem;
+            box-sizing: border-box;
+            padding: 1rem 0.3rem;
+            line-height: 2rem;
+            position: relative;
+            ::after{
+                content: "";
+                display: block;
+                width: 0.1rem;
+                height: 5rem;
+                background-color: #eee;
+                position: absolute;
+                top: 15%;
+                right: -3%;
+            }
+            .img-box{
+                display: inline-block;
+                width: 1.5rem;
+                height: 1.5rem;
+                background: url(../img/cuidan.png) center;
+                background-size: 100% auto;
+            }
+            .img-box2{
+                display: inline-block;
+                width: 1.5rem;
+                height: 1.5rem;
+                background: url(../img/tuidan.png) center;
+                background-size: 100% auto;
+            }
+            .img-box3{
+                display: inline-block;
+                width: 1.5rem;
+                height: 1.5rem;
+                background: url(../img/huodong.png) center;
+                background-size: 100% auto;
+            }
+            .img-box4{
+                display: inline-block;
+                width: 1.5rem;
+                height: 1.5rem;
+                background: url(../img/tousu.png) center;
+                background-size: 100% auto;
+            }                        
+        }
+    }
+}
+.list-item-right{
+    display: inline-block;
+    height: 8rem;
+    // background-color: green;
+    width: 100%;
+    .category-list-item{
+        width: 100%;
+        height: 4rem;
+        font-size: 1.4rem;
+        color: #666;
+        line-height: 4rem;
+        padding: 0 2rem;
+        box-sizing: border-box;
+        // text-overflow: ellipsis;
+        overflow: hidden;
+
+    }
+}
+.footer{
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+    position:fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    .footer-nr{
+        width: 50%;
+        text-align: center;
+        span{
+            display: block;
+            margin-top: 1rem;
+        }
+        .icon-zaixiankefu{
+            color: blue;
+            font-size: 2.6rem;
+
+        }
+        .icon-dianhuakefu{
+            color: green;
+            font-size: 2.6rem;
+
+        }
+    }
+    .xian2{
+        width: 0;
+        height: 3rem;
+        border-right: 1px solid #f1f1f1;
+        margin-top:1.2rem; 
+    }
+}
